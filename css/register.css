@@ -23,7 +23,6 @@ body {
     padding: 30px;
     max-width: 400px;
     width: 100%;
-    margin: auto;
     border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
@@ -51,8 +50,13 @@ body {
 }
 
 .input-group input:focus {
-    outline: none;
     border-color: #4facfe;
+    outline: none;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
 }
 
 button {
@@ -60,39 +64,19 @@ button {
     padding: 12px;
     background: #4facfe;
     border: none;
-    color: #fff;
+    color: white;
     font-size: 16px;
     border-radius: 6px;
     cursor: pointer;
-    margin-top: 10px;
 }
 
 button:hover {
     background: #00c6ff;
 }
 
-.login-link {
-    text-align: center;
-    margin-top: 15px;
-}
-
-.login-link a {
-    color: #4facfe;
-    text-decoration: none;
-}
-
-/* Mobile */
+/* Responsive */
 @media (max-width: 480px) {
     .register-form {
         padding: 20px;
     }
 }
-
-/* Tablet */
-@media (max-width: 768px) {
-    .register-form {
-        max-width: 450px;
-    }
-}
-
-
