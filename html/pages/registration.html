@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="../../css/registration.css">
+</head>
+<body>
+
+<div class="form-box">
+    <h2>Register</h2>
+    <form method="POST" action="">
+        <!-- Name: only letters and spaces, min 3 characters -->
+        <input type="text" name="name" placeholder="Enter Name" 
+               pattern="[A-Za-z\s]{3,}" 
+               title="Name must be at least 3 characters and contain only letters and spaces" 
+               required>
+
+        <!-- Email: must follow proper format -->
+        <input type="email" name="email" placeholder="Enter Email" 
+               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+               title="Enter a valid email address (e.g., user@example.com)" 
+               required>
+
+        <!-- Password: at least 6 characters, must include letters and numbers -->
+        <input type="password" name="password" placeholder="Enter Password" 
+               pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" 
+               title="Password must be at least 6 characters long and include both letters and numbers" 
+               required>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+</body>
+</html>
