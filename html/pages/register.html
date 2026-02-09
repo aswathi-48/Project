@@ -9,44 +9,29 @@
 
 <div class="form-box">
     <h2>Register</h2>
-    <form>
 
-        <!-- Name -->
+    <form onsubmit="return validateForm()">
+
         <label>Full Name</label>
-        <input 
-            type="text" 
-            placeholder="Enter your name"
-            required
-            pattern="[A-Za-z ]+"
-            title="Name should contain letters and spaces only">
+        <input type="text" id="name" placeholder="Enter your name">
+        <small id="nameError"></small>
 
-        <!-- Email -->
         <label>Email</label>
-        <input 
-            type="email" 
-            placeholder="Enter your email"
-            required>
+        <input type="text" id="email" placeholder="Enter your email">
+        <small id="emailError"></small>
 
-        <!-- Password -->
         <label>Password</label>
-        <input 
-            type="password" 
-            placeholder="Enter password"
-            required
-            minlength="6"
-            title="Password must be at least 6 characters">
+        <input type="password" id="password" placeholder="Enter password">
+        <small id="passwordError"></small>
 
-        <!-- Confirm Password -->
-        <label>Confirm Password</label>
-        <input 
-            type="password" 
-            placeholder="Confirm password"
-            required
-            minlength="6">
+        <label>Phone Number</label>
+        <input type="text" id="phone" placeholder="Enter phone number">
+        <small id="phoneError"></small>
 
         <button type="submit">Register</button>
     </form>
 </div>
 
+<script src="../../js/register.js"></script>
 </body>
 </html>
